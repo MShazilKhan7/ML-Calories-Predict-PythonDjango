@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block  content %}
+
+<div class="registerForm container-fluid col-m-6 col-5 mt-5 ">
+   <div>
+      <h2>Registration</h2>
+   </div>
+   <form method="POST" class="col-12">
+      {% csrf_token %}
+       <!-- 2 column grid layout with text inputs for the first and last names -->
+       
+       <div class="form-outline mb-3">
+         <div class="bg-success ">{{ form.username }}</div>
+         <label class="form-label" for="form3Example3">username</label>
+       </div>
+       <div class="form-outline mb-3">
+         <div>{{ form.email }}</div>
+         <label class="form-label" for="form3Example3">email</label>
+       </div>
+       <div class="form-outline mb-3">
+         <div>{{form.password1}}</div>
+         <label class="form-label" for="form3Example3">password</label>
+       </div>
+       <div class="form-outline mb-3">
+         <div>{{ form.password2 }}</div>
+         <label class="form-label" for="form3Example3">confirm password</label>
+       </div>
+       
+       <!-- Submit button -->
+       <button type="submit" class="btn btn-primary btn-block mb-3">register</button>
+     
+     </form>
+   </div>
+
+{% endblock content %}

@@ -1,0 +1,18 @@
+<nav class="navbar navbar-dark bg-dark justify-content-evenly ">
+    <!-- Navbar content -->
+    <div>
+        <h3 class=" text-white" >Predict Your Burnt Calories </h3>
+    </div>
+    
+    {% if not request.user.is_authenticated  %}
+    <div>
+        <a href="{% url 'login_view'  %}" class="btn btn-primary">Login</a>
+        <a href="{% url 'register'  %}" class="btn btn-light">Register</a>
+    </div>
+    {% else %}
+    <div>
+        <a href="{% url 'logout_view'  %}" class="btn btn-light">logout</a>
+    </div>
+    {% endif %}
+        
+</nav>

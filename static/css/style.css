@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    background-image: url(https://images.unsplash.com/photo-1627903632132-ead7be18a56d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80);
+    background-size: "cover";
+    background-position: center;
+    /* position: relative; */
+}
+
+
+
+
+
+
+.predict{
+    margin-left: 550px;
+    margin-top: 150px;
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+
+}
+
+
+
+/* css dialog box */
+.dialogBox{
+    width: 300px;
+    height: 250px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    margin-left: 40%;
+    position: absolute;
+    transform: scale(1);
+    
+}
+
+
+.dialogBox p{
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.dialogBox i{
+    font-size: 3rem;
+}
+.dialogBox a i{
+    font-size: 1rem;
+
+}
+.dialogBox a{
+    width: 50%;
+    font-size: 1rem;
+}
+
+
+/* registerForm */
+.registerForm{
+    background-color: rgb(13, 12, 12);   
+}
+.registerForm h2{
+
+    color: #FFF;
+    margin-left: 13px;
+}
+
+.registerForm label{
+    color: white;
+}
+

@@ -1,0 +1,1 @@
+web: gunicorn calories_burnt.wsgi
